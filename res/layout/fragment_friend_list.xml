@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hanyang.swengineering.smartprofileforkakao.MainActivity$PlaceholderFragment" >
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="30dp">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/my_profile" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+        
+        <ImageView
+            android:id="@+id/my_profile_image"
+            android:layout_width="50dp"
+            android:src="@drawable/profile_sample"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/my_profile_image"
+            android:text="@string/my_id" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp">
+        
+        <TextView
+            android:id="@+id/label_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/friends" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/label_friends"
+            android:text="8" />
+        
+        <Button
+            android:id="@+id/btn_add_group" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/add_group" />
+        
+    </RelativeLayout>
+    
+    <ExpandableListView
+        android:id="@+id/friend_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        
+        
+    </ExpandableListView>
+
+</LinearLayout>
